@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "lib": [
+        "ESNext",
+        "dom"
+      ],
+      "declaration": true,
+      "declarationMap": true,
+      "outDir": "dist",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "useUnknownInCatchVariables": false,
+      "downlevelIteration": true,
+    },
+    "include": [
+      "src",
+      "package.json",
+    ],
+    "exclude": [
+      "dist"
+    ]
+  }
