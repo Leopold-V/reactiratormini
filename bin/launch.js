@@ -2,6 +2,6 @@
 
 'use strict';
 
-const sayHello = require('../src/index.ts');
+const program = require('../build/index.js');
 
-sayHello();
+program.parse();
