@@ -1,21 +1,15 @@
-const { Command } = require('commander');
+import { Command } from 'commander';
+import installProject from './install-project-command';
 const program = new Command();
 
 program
   .name('reactirator')
-  .description('CLI to some JavaScript string utilities')
-  .version('0.8.0');
-
-program.command('split')
-  .description('Split a string into substrings and display as an array')
-  .argument('<string>', 'string to split')
-  .option('--first', 'display just the first substring')
-  .option('-s, --separator <char>', 'separator character', ',')
+  .description('A wrapper around create-react-app to add extra-customizations.')
+  .version('Alpha-0.0.1')
+  .argument('<string>', 'project name')
+  .option('--typescript', 'Add typescript to your project')
   .action((str: string, options: any) => {
-    const limit = options.first ? 1 : undefined;
-    console.log(str.split(options.separator, limit));
+    installProject(str, options);
   });
 
-
-
-module.exports = program;
+export default program
