@@ -5,10 +5,10 @@
   "main": "index.ts",
   "bin": "./bin/launch.js",
   "scripts": {
-    "start": "npx reactiratormini",
-    "build": "babel src --out-file ./dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"
+    "dev": "rollup -c --watch",
+    "start": "node ./bin/launch.js",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
