@@ -1,7 +1,7 @@
-import { runCmd } from "../utils/run-cmd";
+import { runCmd } from '../utils/run-cmd';
 
 const installStorybook = async (projectName: string): Promise<void> => {
-    await runCmd(`cd ${projectName} && npx -p @storybook/cli sb init`);
+  await runCmd(`cd ${projectName} && npx -p @storybook/cli sb init`);
 };
 
 export default installStorybook;

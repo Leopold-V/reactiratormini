@@ -16,7 +16,10 @@ const installProject = async (projectName: string, options: any) => {
     await installStorybook(projectName);
   }
   if (options.bootstrap) {
-    await installBootstrap(projectName, options.template === 'typescript' ? true : false);
+    await installBootstrap(
+      projectName,
+      options.template === 'typescript' ? true : false
+    );
   }
 };
 
