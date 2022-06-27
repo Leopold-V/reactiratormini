@@ -1,6 +1,6 @@
-import { promisifyWriteFs } from "../utils/promisifyFs";
-import { runCmd } from "../utils/run-cmd";
-import { writeFileAtTop } from "../utils/writeFileAtTop";
+import { promisifyWriteFs } from '../utils/promisifyFs';
+import { runCmd } from '../utils/run-cmd';
+import { writeFileAtTop } from '../utils/writeFileAtTop';
 
 const installTailwind = async (fullPath: string): Promise<void> => {
   await runCmd(
