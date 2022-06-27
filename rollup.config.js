@@ -9,7 +9,7 @@ export default {
   output: {
     file: 'build/index.js',
     format: 'cjs',
-    exports: 'auto',
+    exports: 'auto'
   },
   plugins: [
     commonjs(),
